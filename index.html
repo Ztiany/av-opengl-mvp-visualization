@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenGL MVP Visualizer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body { margin: 0; overflow: hidden; background-color: #0f172a; color: white; }
+      
+      /* Custom scrollbar for the sidebar */
+      ::-webkit-scrollbar {
+        width: 12px; /* Increased width for easier dragging */
+      }
+      ::-webkit-scrollbar-track {
+        background: #1e293b;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #475569;
+        border-radius: 6px;
+        border: 3px solid #1e293b; /* Adds padding effect */
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #64748b;
+      }
+
+      /* Better Range Slider Styling */
+      input[type=range] {
+        -webkit-appearance: none; 
+        width: 100%; 
+        background: transparent; 
+        cursor: pointer;
+      }
+      
+      input[type=range]:focus {
+        outline: none;
+      }
+
+      /* Webkit Slider Thumb */
+      input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        background: #3b82f6;
+        margin-top: -7px; 
+        box-shadow: 0 0 2px rgba(0,0,0,0.5);
+        transition: transform 0.1s;
+      }
+      
+      input[type=range]::-webkit-slider-thumb:hover {
+        transform: scale(1.1);
+        background: #60a5fa;
+      }
+
+      /* Webkit Slider Track */
+      input[type=range]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 4px;
+        cursor: pointer;
+        background: #475569;
+        border-radius: 2px;
+      }
+
+      /* Firefox Slider Thumb */
+      input[type=range]::-moz-range-thumb {
+        height: 18px;
+        width: 18px;
+        border: none;
+        border-radius: 50%;
+        background: #3b82f6;
+        cursor: pointer;
+        box-shadow: 0 0 2px rgba(0,0,0,0.5);
+        transition: transform 0.1s;
+      }
+
+      input[type=range]::-moz-range-thumb:hover {
+        transform: scale(1.1);
+        background: #60a5fa;
+      }
+
+      /* Firefox Slider Track */
+      input[type=range]::-moz-range-track {
+        width: 100%;
+        height: 4px;
+        cursor: pointer;
+        background: #475569;
+        border-radius: 2px;
+      }
+
+      /* Hide Number Input Spinners */
+      /* Chrome, Safari, Edge, Opera */
+      input[type=number]::-webkit-outer-spin-button,
+      input[type=number]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox */
+      input[type=number] {
+        -moz-appearance: textfield;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "three": "https://aistudiocdn.com/three@^0.181.2",
+    "three/": "https://aistudiocdn.com/three@^0.181.2/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

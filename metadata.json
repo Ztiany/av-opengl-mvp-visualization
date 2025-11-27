@@ -1,0 +1,5 @@
+{
+  "name": "OpenGL MVP Visualizer",
+  "description": "An interactive educational tool to visualize the Model, View, and Projection (MVP) matrices in 3D graphics using React and Three.js.",
+  "requestFramePermissions": []
+}
